@@ -24,6 +24,31 @@
         float: right;
         margin-right: 25px;
       }
+      .twitterIcon {
+        margin-bottom: 35px;
+      }
+      @media screen and (max-width: 800px) {
+        .heading {
+          text-align: center;
+          margin-top: 30px
+        }
+        .social {
+          display: flex;
+          justify-content: middle;
+          margin-top: 40px;
+          width: 50%;
+          margin-right: 50px
+        }
+        .twitterIcon {
+          margin-bottom: none;
+          margin-right: 30px;
+        }
+        .picture {
+          margin-right: auto;
+          width: 50%;
+          margin-left: auto
+        }
+      }
       .copyright {
         color: gray;
         font-weight: 200;
@@ -46,10 +71,11 @@
       <h2 style="color: white; font-weight: 300; display: inline-block; margin-left: 75px; float: left">I'm Guru, a <b>developer</b>, <b>designer</b>,<br><b>biologist</b>, & <b>photographer</b>.</h2>
     </div>
     <div class="social">
-      <a href="https://twitter.com/_gururajesh" style="text-decoration: none; filter: invert()">
-        <img src="images/twitter_icon.png"
-        style="margin-bottom: 35px"
-        alt="My Twitter"/>
+      <div class="twitterIcon">
+        <a href="https://twitter.com/_gururajesh" style="text-decoration: none; filter: invert()">
+          <img src="images/twitter_icon.png"
+          alt="My Twitter"/>
+      </div>
       </a>
       <br>
       <a href="https://github.com/guraj" style="text-decoration: none; filter: invert()">
@@ -62,16 +88,18 @@
       style="height: 25px; width: auto; display: inline-block; margin-left: 75px; margin-right: 10px; vertical-align: middle">
       <h2 style="color: gray; font-weight: 200; display: inline-block; margin-bottom: 10px">photos.</h2>
       <hr style="border-style: solid; background: gray; height: 1px; border: none; border-radius: 15px 15px 15px 15px; margin-right: 75px; margin-left: 75px">
-      <img src="images/building.jpeg"
-      style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 50px; margin-top: 50px">
-      <img src="images/mountain.jpeg"
-      style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 20px; margin-top: 50px">
-      <img src="images/droplets.jpeg"
-      style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 20px; margin-top: 50px">
-      <img src="images/flowers.jpeg"
-      style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 20px; margin-top: 50px">
-      <img src="images/blades.jpeg"
-      style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 20px; margin-top: 50px">
+      <div class="picture">
+        <img src="images/building.jpeg"
+        style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 50px; margin-top: 50px">
+        <img src="images/mountain.jpeg"
+        style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 20px; margin-top: 50px">
+        <img src="images/droplets.jpeg"
+        style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 20px; margin-top: 50px">
+        <img src="images/flowers.jpeg"
+        style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 20px; margin-top: 50px">
+        <img src="images/blades.jpeg"
+        style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 20px; margin-top: 50px">
+      </div>
     </div>
     <div class="copyright">
       <h4 style="color: gray; font-weight: 100">GURU RAJESH &#169; 2020</h4>
