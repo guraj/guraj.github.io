@@ -56,18 +56,42 @@
         float: bottom;
         float: left;
       }
+      .mobileHide { display: inline; }
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
+        .mobileHide { display: none; }
+      }
+      .mobileShow { display: none; }
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
+        .mobileShow { display: inline; }
+      }
       </style>
         <title>Guru Rajesh</title>
   </head>
 
 <body>
-    <p style="color: white; font-weight: 500; display: inline-block; margin-left: 75px">Guru Rajesh</p>
+  <div class="mobileHide">
+      <p style="color: white; font-weight: 500; display: inline-block; margin-left: 75px">Guru Rajesh</p>
+      <a href="mailto:guru@raje.sh" style="text-decoration: none">
+        <p style="color: white; font-weight: 500; float: right; display: inline-block; margin-right: 75px">guru@raje.sh</p>
+      </a>
+      <hr style="border-style: solid; color: white; height: 2px; background: linear-gradient(to right, #d6ff7f, #00b3cc); border: none; border-radius: 15px 15px 15px 15px; margin-right: 75px; margin-left: 75px">
+  </div>
+  <div class="mobileShow">
+    <p style="color: white; font-weight: 500; display: inline-block; margin-left: 25px">Guru Rajesh</p>
     <a href="mailto:guru@raje.sh" style="text-decoration: none">
-      <p style="color: white; font-weight: 500; float: right; display: inline-block; margin-right: 75px">guru@raje.sh</p>
+      <p style="color: white; font-weight: 500; float: right; display: inline-block; margin-right: 25px">guru@raje.sh</p>
     </a>
-    <hr style="border-style: solid; color: white; height: 2px; background: linear-gradient(to right, #d6ff7f, #00b3cc); border: none; border-radius: 15px 15px 15px 15px; margin-right: 75px; margin-left: 75px">
+    <hr style="border-style: solid; color: white; height: 2px; background: linear-gradient(to right, #d6ff7f, #00b3cc); border: none; border-radius: 15px 15px 15px 15px; margin-right: 25px; margin-left: 25px">
+  </div>
     <div class="heading">
-      <h2 style="color: white; font-weight: 300; display: inline-block; margin-left: 75px; float: left">I'm Guru, a <b>developer</b>, <b>designer</b>,<br><b>biologist</b>, & <b>photographer</b>.</h2>
+      <div class="mobileHide">
+        <h2 style="color: white; font-weight: 300; display: inline-block; margin-left: 75px; float: left">I'm Guru, a <b>developer</b>, <b>designer</b>,<br><b>biologist</b>, & <b>photographer</b>.</h2>
+      </div>
+      <div class="mobileShow">
+        <h2 style="color: white; font-weight: 300; display: inline-block; margin-left: 75px; float: left">I'm Guru, a <b>developer</b>, <b>designer</b>, <b>biologist</b>, & <b>photographer</b>.</h2>
+      </div>
     </div>
     <div class="social">
       <div class="twitterIcon">
