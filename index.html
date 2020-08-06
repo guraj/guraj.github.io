@@ -4,61 +4,76 @@
     <meta charset="utf-8">
     <meta name="author" content="Guru Rajesh">
     <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Work+Sans:300,700,800">
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,500,700,800">
       <style>
       body {
-        font-family: 'Work Sans';
+        font-family: 'Poppins';
         background-color: #222222;
+        height: 100%;
       }
-      .name {
-        font-size: 30pt
+      .heading {
+        text-align: left;
+        margin-top: 100px
       }
-      .description {
-        font-size: 25pt
+      .subheadings {
+        text-align: left;
+        margin-top: 300px
       }
-      .email {
-        font-size: 15pt
+      .social {
+        float: right;
+        margin-right: 25px;
+      }
+      .copyright {
+        color: gray;
+        font-weight: 200;
+        margin-left: 75px;
+        margin-top: 40px;
+        float: bottom;
+        float: left;
       }
       </style>
         <title>Guru Rajesh</title>
   </head>
 
 <body>
-  <div style="float:left; margin-left: 70px">
-    <div class="name">
-      <h1 style="font-weight: 700; margin-bottom: 0px; margin-top: 90px;
-      line-height: 90%; color: white">GURU<br>RAJESH</h1>
+    <p style="color: white; font-weight: 500; display: inline-block; margin-left: 75px">Guru Rajesh</p>
+    <a href="mailto:guru@raje.sh" style="text-decoration: none">
+      <p style="color: white; font-weight: 500; float: right; display: inline-block; margin-right: 75px">guru@raje.sh</p>
+    </a>
+    <hr style="border-style: solid; color: white; height: 2px; background: linear-gradient(to right, #d6ff7f, #00b3cc); border: none; border-radius: 15px 15px 15px 15px; margin-right: 75px; margin-left: 75px">
+    <div class="heading">
+      <h2 style="color: white; font-weight: 300; display: inline-block; margin-left: 75px; float: left">I'm Guru, a <b>developer</b>, <b>designer</b>,<br><b>biologist</b>, & <b>photographer</b>.</h2>
     </div>
-    <div class="description">
-      <p style="font-weight: 300; margin-top: 15px">
-        <span style="color: white">I'm an</span>
-        <span style="color: #58d1bd">app developer</span><span style="color: white">,</span>
-        <span style="color: #a9b5c5">musician</span><span style="color: white">,</span><br>
-        <span style="color: #1a762a">designer</span><span style="color: white">,</span>
-        <span style="color: white">and lifelong</span>
-        <span style="color: #52a4d6">learner</span>.</p>
-    </div>
-    <div class="email">
-      <a href="mailto:gururajesh@pm.me">
-        <p style="font-weight: 800; margin-top: 225px; color: white; text-decoration: underline; text-decoration-color: white">GURURAJESH@PM.ME</p>
-      </a>
-    </div>
-    <div>
-      <a href="https://twitter.com/_gururajesh" style="text-decoration: none; max-width: 100%; height: auto; filter: invert()">
+    <div class="social">
+      <a href="https://twitter.com/_gururajesh" style="text-decoration: none; filter: invert()">
         <img src="images/twitter_icon.png"
+        style="margin-bottom: 35px"
         alt="My Twitter"/>
       </a>
-      <a href="https://github.com/guraj" style="max-width: 100%; height: auto; filter: invert()">
+      <br>
+      <a href="https://github.com/guraj" style="text-decoration: none; filter: invert()">
         <img src="images/github_icon.png"
-        style="margin-left: 15px"
         alt="My Github"/>
       </a>
     </div>
-  </div>
-  <div style="float:right">
-    <img src="images/hero.jpg"
-    style="margin: 0; padding: 0; max-width: 100%; height: auto; display: block; height: 815px; width: auto"
-    alt="Green Building"/>
-  </div>
+    <div class="subheadings">
+      <img src="images/camera_emoji.png"
+      style="height: 25px; width: auto; display: inline-block; margin-left: 75px; margin-right: 10px; vertical-align: middle">
+      <h3 style="color: gray; font-weight: 200; display: inline-block; margin-bottom: 10px">photos.</h3>
+      <hr style="border-style: solid; background: gray; height: 1px; border: none; border-radius: 15px 15px 15px 15px; margin-right: 75px; margin-left: 75px">
+      <img src="images/building.jpeg"
+      style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 50px; margin-top: 50px">
+      <img src="images/mountain.jpeg"
+      style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 20px; margin-top: 50px">
+      <img src="images/droplets.jpeg"
+      style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 20px; margin-top: 50px">
+      <img src="images/flowers.jpeg"
+      style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 20px; margin-top: 50px">
+      <img src="images/blades.jpeg"
+      style="clip-path: circle(100px at center); height: 200px; width: auto; display: inline-block; margin-left: 20px; margin-top: 50px">
+    </div>
+    <div class="copyright">
+      <h4 style="color: gray; font-weight: 100">GURU RAJESH &#169; 2020</h4>
+    </div>
 </body>
 </html>
