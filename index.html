@@ -1,15 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>**Guru Rajesh**</title>
+    <title>Guru Rajesh</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
+
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-left" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/guraj" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/gururajesh/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <h1>Hello, World!</h1>
-        <p>This is a basic webpage example.</p>
+        <div class="row align-items-center"> <!-- Align items vertically center -->
+            <!-- Image Column -->
+            <div class="col-auto">
+                <img src="me.jpg" alt="Guru Rajesh" class="rounded-circle" style="width: 120px; height: 120px;"> <!-- Image with fixed width and height -->
+            </div>
+            <!-- Text Column -->
+            <div class="col">
+                <h1 id="home">Guru Rajesh</h1>
+                <h2 class="city">Berkeley, CA</h2>
+            </div>
+        </div>
     </div>
+
+    <div class="container">
+        <h1 id="education" class="section-anchor">Education</h1>
+        <h5 class="education-description">Junior studying Bioengineering and EECS at the University of California, Berkeley. Graduating in May 2025.
+            Concentration in Biomedical Devices and interest in <em>health wearables</em>, <em>computational biology</em>, and <em>product design</em>.
+        </h5>
+        <h3 class="clubs-heading" style="margin-top: 60px;"><u>Clubs</u></h3>
+        <div class="row">
+            <div class="clac">
+                <img src="clubs.jpg" alt="The clubs that I am in: iGEM at Berkeley, Space Technologies at Cal, and Cloud at Cal" class="rounded-image">
+            </div>            
+        </div>      
+    </div>
+
+    <div class="container" style="margin-bottom: 100px;">
+        <h1 id="work" class="section-anchor">Work Experience</h1>
+        <h3 class="clubs-heading" style="margin-top: 30px;">Undergraduate Researcher, Biomimetic Research Lab</h3>
+        <h5 class="subheading" style="margin-top: 10px;">California NanoSystems Institute at UCLA</h5>
+        <p>
+            <ul>
+                <li class="bullet">Integrating an ADC-MCU sensing system for cognitive research</li>
+                <li class="bullet">Writing C firmware for SPI and Wi-Fi for TI-CC3200 microcontroller</li>
+                <li class="bullet">Implementing  digital signal processing algorithms for ADC</li>
+            </ul>
+        </p>
+        <h3 class="clubs-heading" style="margin-top: 40px;">Bioinformatics Intern</h3>
+        <h5 class="subheading" style="margin-top: 10px;">CRISPRBits</h5>
+        <p>
+            <ul>
+                <li class="bullet">Developing guide RNA design algorithms for CRISPR theranostics</li>
+                <li class="bullet">Studying CRISPR-Cas9 and Cas12 systems</li>
+                <li class="bullet">Writing bioinformatics pipelines in Python</li>
+            </ul>
+        </p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <footer class="footer">
+        <div class="text-center">
+            <p>&copy; 2023 Guru Rajesh. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

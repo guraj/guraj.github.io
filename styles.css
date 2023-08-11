@@ -1,1 +1,124 @@
-p { color: red; }
+/* Elliptical navbar */
+.navbar {
+    background-color: rgba(1,1,1,0.9);
+    padding: 10px 30px; /* Padding for aesthetic spacing */
+    border-top: 0.01px solid rgba(255, 255, 255, 0.653);
+    border-bottom: 0.01px solid rgba(255, 255, 255, 0.653);
+}
+
+.navbar-nav {
+    display: flex; /* To layout the items horizontally */
+    justify-content: center; /* Center the items */
+    align-items: center; /* Vertically align the items */
+    gap: 20px; /* Space between items */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar-nav .nav-link {
+    margin: 0 5px; /* Space between nav items */
+    padding: 5px 15px; /* Padding for each link */
+    text-decoration: none; /* Remove underlines */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.nav-button:first-of-type {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+    
+.nav-button:last-of-type {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+p { 
+    color: rgb(243, 232, 232); 
+}
+
+h1 { 
+    color: rgb(243, 232, 232); 
+}
+
+.nav-border {
+    border-radius: 30px;    
+}
+
+body {
+    background-color: #161718;
+}
+
+.container {
+    padding-top: 100px; /* Adjust based on the actual height of your navbar */
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.education-description {
+    margin-top: 20px;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.clubs-heading {
+    margin-top: 20px; 
+    color: white;
+}
+
+.subheading {
+    margin-top: 20px; 
+    color: rgba(255, 255, 255, 0.691);
+}
+
+.rounded-image {
+    border-radius: 15px;
+}
+
+.clac {
+    width: 700px; /* Adjust this to your preferred width */
+    display: inline-block;  /* Makes the container fit the content */
+}
+
+.clac .rounded-image {
+    width: 100%;  /* This ensures the image takes up the full width of its container */
+    height: auto; /* This preserves the image's aspect ratio */
+    display: block;
+    object-fit: cover; 
+}
+
+.city {
+    color: #e0e0e0a2;
+}
+
+.bullet {
+    color: white;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: rgba(1,1,1,0.9);
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    border-top: 0.01px solid rgba(255, 255, 255, 0.653);
+}
+
+.footer p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9em;
+}
+
+/* Scroll adjustment for fixed navbar */
+.section-anchor::before {
+    display: block;
+    content: "";
+    height: 60px;      /* Adjust this value to your navbar's height */
+    margin-top: -60px; /* The negative value of the above */
+    visibility: hidden;
+    pointer-events: none;
+}
